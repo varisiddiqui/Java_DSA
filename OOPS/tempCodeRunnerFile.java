@@ -1,0 +1,2 @@
+ super();
+        super.color="brown";
