@@ -60,9 +60,9 @@ public class MCM {
         }
 
         //bottom-up
-        for(int len = 2; len<=n-1; len++){
-            for(int i=1; i<=n-len; i++){
-                int j = i+len-1; //col
+        for(int len = 2; len<=n-1; len++){ //iss length ka
+            for(int i=1; i<=n-len; i++){ //iss row mein
+                int j = i+len-1; //iss col mein hai sirf ek
                 dp[i][j] = Integer.MAX_VALUE;
                 for(int k=i; k<=j-1; k++){
                     int cost1 = dp[i][k];
